@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  background-color: #222831;
+}
+
+.card {
+  position: relative;
+  margin: 35px;
+  width: calc(3.5 * 63px);
+  height: calc(3.5 * 88px);
+}
+
+.card img {
+  height: calc(3.5 * 88px);
+  border: 3px solid #ddb5e1;
+  border-radius: 12px;
+}

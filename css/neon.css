@@ -106,19 +106,37 @@ body {
   background: linear-gradient(#e81131, #f57910);
 }
 #dragon::before {
-  background: linear-gradient(45deg, #e81131, #f57910);
+  background: linear-gradient(45deg, #f57910, #e81131);
 }
 #shadow {
-  background: linear-gradient(#1966de, #1fe776);
+  background: linear-gradient(#de196b, #17abd7);
 }
 #shadow::before {
-  background: linear-gradient(45deg, #1966de, #1fe776);
+  background: linear-gradient(45deg, #17abd7, #de196b);
 }
 #junji {
   background: linear-gradient(#1b1f7e, #d91ed8);
 }
 #junji::before {
-  background: linear-gradient(45deg, #1b1f7e, #d91ed8);
+  background: linear-gradient(45deg, #d91ed8, #1b1f7e);
+}
+#leaf {
+  background: linear-gradient(#14c737, #d33ec7);
+}
+#leaf::before {
+  background: linear-gradient(45deg, #d33ec7, #14c737);
+}
+#kitsune {
+  background: linear-gradient(#ecdd9a, #ab1057);
+}
+#kitsune::before {
+  background: linear-gradient(45deg, #ab1057, #ecdd9a);
+}
+#hacker {
+  background: linear-gradient(#7eaad3, #2146b2);
+}
+#hacker::before {
+  background: linear-gradient(45deg, #2146b2, #7eaad3);
 }
 
 /*Вопросик, как сделать так же через keyframe*/
