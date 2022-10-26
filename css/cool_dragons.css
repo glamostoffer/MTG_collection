@@ -1,3 +1,9 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-wrap: wrap;
@@ -8,13 +14,43 @@ body {
 
 .card {
   position: relative;
+  padding: 45px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.17);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   margin: 35px;
-  width: calc(3.5 * 63px);
-  height: calc(3.5 * 88px);
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  overflow: hidden;
 }
 
 .card img {
   height: calc(3.5 * 88px);
-  border: 3px solid #ddb5e1;
   border-radius: 12px;
+}
+
+.card:hover::before {
+  content: '';
+  background-color: #fff;
+  height: 91%;
+  width: 85%;
+  position: absolute;
+  left: 7.4%;
+  bottom: 5.1%;
+  border-radius: 18px;
+  background-image: conic-gradient(goldenrod 20deg, transparent 120deg);
+  animation: spin 2s infinite linear;
+}
+
+.card:hover img {
+  transform: scale(1.15);
+  transition: 0.9s;
+}
+
+@keyframes spin {
+  100% {
+    rotate: 360deg;
+  }
 }
