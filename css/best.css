@@ -14,6 +14,55 @@ body {
   border-radius: 3px;
 }
 
+.grad {
+  position: absolute;
+  display: flex;
+  /*justify-content: space-between;*/
+  width: 100%;
+  height: 100%;
+  top: 25%;
+}
+
+.background_gradient {
+  border-radius: 4px;
+  transform: skew(36deg);
+  width: 160px;
+  height: 640px;
+  margin: 0;
+  padding: 0;
+}
+.background_gradient::before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% + 4px);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 1;
+  filter: blur(3px);
+  background-size: 400%;
+}
+
+#back_grad_1 {
+  background: linear-gradient(rgb(232, 17, 49), rgb(245, 121, 16));
+  margin-left: 26%;
+  margin-top: 2%;
+}
+#back_grad_1::before {
+  background: linear-gradient(45deg, #f57910, #e81131);
+}
+#back_grad_2 {
+  background: linear-gradient(rgb(236, 221, 154), rgb(171, 16, 87));
+  margin-left: 27%;
+  margin-right: 6%;
+  margin-top: 16%;
+}
+#back_grad_2::before {
+  background: linear-gradient(45deg, #ab1057, #ecdd9a);
+}
+
 #text {
   margin: 2% auto;
   display: flex;

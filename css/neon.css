@@ -33,6 +33,29 @@ body {
   border-radius: 12px;
 }
 
+.card:hover img {
+  filter: blur(2px);
+  transition: 1s;
+}
+
+.card a {
+  position: absolute;
+  opacity: 0;
+  padding: 4px;
+  border-radius: 6px;
+  top: 50%;
+  left: 42%;
+  text-decoration: none;
+  color: #eee;
+  background: #43157c;
+}
+
+.card:hover a {
+  opacity: 100;
+  transition: 1.2s;
+  transform: translateY(15px);
+}
+
 .block1 {
   z-index: 2;
   position: absolute;
@@ -103,42 +126,65 @@ body {
 
 /*Individual colors*/
 #dragon {
-  background: linear-gradient(#e81131, #f57910);
+  background: linear-gradient(rgb(232, 17, 49), rgb(245, 121, 16));
 }
 #dragon::before {
   background: linear-gradient(45deg, #f57910, #e81131);
 }
+#dragon_a {
+  color: #eee;
+  background: #d2165c;
+}
 #shadow {
-  background: linear-gradient(#de196b, #17abd7);
+  background: linear-gradient(rgb(222, 25, 107), rgb(23, 171, 215));
 }
 #shadow::before {
   background: linear-gradient(45deg, #17abd7, #de196b);
 }
+#shadow_a {
+  color: #e7e7e7;
+  background: #1faace;
+}
 #junji {
-  background: linear-gradient(#1b1f7e, #d91ed8);
+  background: linear-gradient(rgb(27, 31, 126), rgb(217, 30, 216));
 }
 #junji::before {
   background: linear-gradient(45deg, #d91ed8, #1b1f7e);
 }
+#junji_a {
+  color: #e7e7e7;
+  background: #131769;
+}
 #leaf {
-  background: linear-gradient(#14c737, #d33ec7);
+  background: linear-gradient(rgb(20, 199, 55), rgb(211, 62, 199));
 }
 #leaf::before {
   background: linear-gradient(45deg, #d33ec7, #14c737);
 }
+#leaf_a {
+  color: #e7e7e7;
+  background: #0d8c26;
+}
 #kitsune {
-  background: linear-gradient(#ecdd9a, #ab1057);
+  background: linear-gradient(rgb(236, 221, 154), rgb(171, 16, 87));
 }
 #kitsune::before {
   background: linear-gradient(45deg, #ab1057, #ecdd9a);
 }
+#kitsune_a {
+  color: #e7e7e7;
+  background: #940d4e;
+}
 #hacker {
-  background: linear-gradient(#7eaad3, #2146b2);
+  background: linear-gradient(rgb(126, 170, 211), rgb(33, 70, 178));
 }
 #hacker::before {
   background: linear-gradient(45deg, #2146b2, #7eaad3);
 }
-
+#hacker_a {
+  color: #e7e7e7;
+  background: #1945bb;
+}
 /*Вопросик, как сделать так же через keyframe*/
 @keyframes animate {
   from {
