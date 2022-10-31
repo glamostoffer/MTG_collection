@@ -50,9 +50,9 @@ body {
 
 .background_gradient {
   border-radius: 4px;
-  transform: skew(36deg);
+  transform: skew(40deg);
   width: 10%;
-  height: 10%;
+  height: 30%;
   margin: 0;
   padding: 0;
 }
@@ -72,8 +72,8 @@ body {
 
 #back_grad_1 {
   background: linear-gradient(rgb(255, 14, 7), rgb(245, 121, 16));
-  margin-left: 7%;
-  margin-top: 2%;
+  margin-left: -1%;
+  margin-top: -2%;
 }
 #back_grad_1::before {
   background: linear-gradient(45deg, #f57910, #ff0e07);
