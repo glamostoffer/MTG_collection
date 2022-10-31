@@ -6,9 +6,17 @@ body {
   background-color: #222831;
 }
 
+.main {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
   position: relative;
-  padding: 45px;
+  padding: 34px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.17);
   justify-content: center;

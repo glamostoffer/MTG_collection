@@ -6,6 +6,7 @@
 }
 
 header {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -48,4 +49,14 @@ header ul li a:hover {
   background: #ff2a6d;
   color: #d1f7ff;
   border-radius: 19px;
+}
+
+.line {
+  position: absolute;
+  top: 80%;
+  height: 3px;
+  width: 85%;
+  border-radius: 4px;
+  background: #ff2a6d;
+  color: #ff2a6d;
 }

@@ -1,0 +1,109 @@
+element {
+  --white: white;
+}
+
+.notificationsWrapper {
+  z-index: 5;
+  background-color: var(--white);
+  position: fixed;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+
+  bottom: 30px;
+  left: 30px;
+  box-shadow: 0px 0px 10px -5px black;
+
+  transition: width 0.8s ease, height 0.8s ease, border-radius 0.2s ease;
+}
+
+.notifications {
+  border-radius: 25px;
+  height: 100%;
+}
+
+.notificationsWrapper:hover {
+  width: 220px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.notificationsWrapper img {
+  margin: 7.5px 0 0 7.5px;
+  width: 35px;
+  height: 35px;
+  transition: all .6s linear;
+}
+
+.notif-head {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: inherit;
+  height: auto;
+  transition: all 0.5s;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+}
+
+.notif-head img {
+  border-radius: 10px;
+
+}
+
+.notificationsWrapper:hover .notif-head {
+  border: 2px solid white;
+  background-color: goldenrod;
+}
+
+.notif-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.notif-list-li {
+  cursor: pointer;
+  color: #eeeeee;
+  display: flex;
+  padding-left: 10%;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-out, transform 0.2s, background-color 0.2s, border-radius 0.3s;
+}
+
+.notif-list-li:hover {
+  color: var(--white);
+  background-color: gold;
+  border: 2px solid white;
+  border-radius: 10px;
+  transform: scaleX(1.1);
+}
+
+.notificationsWrapper:hover .notif-list-li {
+  transition: opacity .4s ease-in 0.2s;
+  opacity: 1;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator_count {
+  color: var(--white);
+}

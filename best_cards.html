@@ -1,34 +1,37 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>MTG</title>
   <link rel="icon" type="image/png" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
+<!--  <link rel="stylesheet" href="css/normalize.css">-->
   <link rel="stylesheet" href="css/best.css">
   <link rel="stylesheet" href="css/nav_bar.css">
+  <script defer src="js/gradients.js"></script>
 </head>
 
 <body>
-  <header>
-    <a href="#" class="logo">Logo</a>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="best_cards.html">Best Cards</a></li>
-      <li><a href="neon.html">Kamigawa: Neon Dynasty</a></li>
-      <li><a href="cool_dragons.html">Cool Dragons</a></li>
-    </ul>
-  </header>
-
+<header>
+  <a href="#" class="logo">Logo</a>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="best_cards.html">Best Cards</a></li>
+    <li><a href="neon.html">Kamigawa: Neon Dynasty</a></li>
+    <li><a href="cool_dragons.html">Cool Dragons</a></li>
+  </ul>
   <div class="line"></div>
+</header>
 
-  <div class="grad">
-    <div class="background_gradient" id="back_grad_1"></div>
-    <div class="background_gradient" id="back_grad_2"></div>
-  </div>
+<!--  <div class="line"></div>-->
 
-  <div id="text">Some of the best cards of all time</div>
+<div class="grad">
+  <div class="background_gradient" id="back_grad_1"></div>
+  <div class="background_gradient" id="back_grad_2"></div>
+</div>
 
+<div id="text">Some of the best cards of all time</div>
+
+<div class="cards">
   <div class="card">
     <div class="card__front">
       <img src="img/dragonlord_ojutai.jpg" alt="dragonlord_ojutai">
@@ -106,5 +109,18 @@
       <a href="https://mtg.fandom.com/wiki/Wilhelt">More</a>
     </div>
   </div>
+  <div class="card">
+    <div class="card__front">
+      <img src="img/ruin-thief.jpg" alt="Anovon">
+    </div>
+    <div class="card__back" id="anovon">
+      Anowon is an expert on ruins, runes, and ancient languages. In his relentless search for
+      answers, he has left a trail of corpses from Tazeem to Akoum. In settlements around
+      Zendikar, Anowon disguised his vampire heritage and earned a reputation as a renowned
+      mage
+      <a href="https://mtg.fandom.com/wiki/Anowon">More</a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
