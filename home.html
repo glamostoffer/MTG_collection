@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/nav_bar.css">
   <link rel="stylesheet" href="css/home.css">
   <script defer src="js/scrolling.js"></script>
+  <script src="js/index.js" defer></script>
 </head>
 <body>
 <header>
@@ -17,6 +18,7 @@
     <li><a href="best_cards.html">Best Cards</a></li>
     <li><a href="neon.html">Kamigawa: Neon Dynasty</a></li>
     <li><a href="cool_dragons.html">Cool Dragons</a></li>
+    <li><a href="LogIn.html">Log In</a></li>
   </ul>
   <div class="line"></div>
 </header>
@@ -46,13 +48,25 @@
   <div class="content">
     <div class="glassmorph_card">
       <div id="glassed_content">
+
         <div class="card" id="back">
           <img src="img/back.jpg" alt="back">
         </div>
+        <div class="top_card_container">
+          <div class="card" id="top_card">
+            <div id="front">
+              <img id="img" src="img/tiamat.jpg" alt="front">
+            </div>
+            <div class="back">
+              <img src="img/back.jpg" alt="front">
+            </div>
+          </div>
+        </div>
+
         <div id="text2">
           BEGINNING PHASE:
           <ul>
-          <li>Untap step</li>
+            <li>Untap step</li>
           You untap all your tapped permanents. On the first turn of the game, you don’t have any permanents, so you just skip this step. No one can cast spells or activate abilities during this step.
             <li>Upkeep step</li>
           Players can cast instants and activate abilities. This part of the turn is mentioned on a number of cards. If something is supposed to happen just once per turn, right at the beginning, an ability will trigger "at the beginning of your upkeep."
@@ -68,20 +82,35 @@
 <div class="footer">
   <div class="about-us">
     <h2>About Us</h2>
-    No kidding, Lorenzo called off his trip to visit
-    Mexico City just because they told him the conquistadores were extinct
+    <div class="about">
+      No kidding, Lorenzo called off his trip to visit
+      Mexico City just because they told him the conquistadores were extinct
+    </div>
+  </div>
+  <div class="socials">
+    <ul class="socialNetwork">
+      <li><a href="#" class="vk-link"><img src="img/vk.png" alt="vk"></a></li>
+      <li><a href="#" class="yt-link"><img src="img/yt.png" alt="yt"></a></li>
+      <li><a href="#" class="tg-link"><img src="img/tg.png" alt="tg"></a></li>
+      <li><a href="#" class="inst-link"><img src="img/dsc.png" alt="inst"></a></li>
+    </ul>
   </div>
   <div class="shop">
     <h2>Shop</h2>
-    <ul>
+    <ul class="list">
       <li><a href="#">Legendary cards</a></li>
       <li><a href="#">Mystical cards</a></li>
       <li><a href="#">Rare cards</a></li>
     </ul>
   </div>
-
-  <div class="contact-us"></div>
+  <div class="brands">
+    <h2>Brands</h2>
+    <ul class="list">
+      <li><a href="#">Dungeons & Dragons</a></li>
+      <li><a href="#">Duel Masters</a></li>
+      <li><a href="#">Magic</a></li>
+    </ul>
+  </div>
 </div>
-
 </body>
 </html>

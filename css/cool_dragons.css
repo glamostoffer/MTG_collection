@@ -18,12 +18,15 @@ body {
   position: relative;
   padding: 34px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.17);
   justify-content: center;
   justify-items: center;
   text-align: center;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 28px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 35px;
   width: fit-content;
   height: fit-content;
