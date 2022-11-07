@@ -164,6 +164,9 @@ h2 {
 }
 
 .top_card_container {
+  position: absolute;
+  left: 60%;
+  top: 30px;
   animation-name: card_move;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -185,7 +188,7 @@ h2 {
 
 @keyframes card_move {
   0% {
-    margin-left: -200%;
+    margin-left: -45%;
   }
   100% {
     margin-left: 0;
